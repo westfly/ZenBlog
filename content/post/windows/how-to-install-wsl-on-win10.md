@@ -7,7 +7,7 @@ tags:
 categories:
     - windows
 comment: false
-draft: true
+draft: false
 ---
 [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)是“Windows Subsystem for Linux”的缩写，顾名思义，WSL就是Windows系统的Linux子系统，其作为Windows组件搭载在Windows10周年更新（1607）后的Windows系统中。
 
