@@ -19,9 +19,11 @@ draft: false
 ## 实战
 
 ### 建立 Repo
+
 申请github账号，配置ssh登陆环境，不在本文的讨论之列，请参考其它资料。
 
 我们需要在github上建立两个Repo：
+
 * BlogRepo 存放 Blog 的配置
 * PageRepo 存放 Hugo public 生成的静态页面
 
@@ -45,6 +47,7 @@ git submodule add -b master git@github.com:westfly/westfly.github.io.git public
 服务自带的Watch模式，能够自动检测Markdown的更改并刷新，达到实时预览的效果，极大的提高博客书写效率。
 
 [Hugo 的安装有多种方式](https://gohugo.io/getting-started/installing/)，本文采用的是下载Hugo最新的[二进制版本](https://github.com/spf13/hugo/releases)（当然有余力的同学也可以从source开始编译），然后将其加入的系统的 PATH中。
+
 ```sh
 # mac
 brew install hugo
@@ -56,7 +59,7 @@ hugo的使用只需要如下几个命令即可，具体的使用方式参考[官
 
 ```shell
 # 在本地新建一个站点，如果不为空 提示用force
-hugo new site . --force 
+hugo new site . --force
 # 新建一个一篇博文
 hugo new post/how-to-deply-blog-on-github.md
 # 启动HTTP服务实时预览
@@ -72,24 +75,25 @@ hugo hugo new site会自动生成这样一个目录结构：
   ▸ content/
     config.toml
 ```
+
 我们可以将这些添加到 BlogRepo 中去，在content/post下可以写markdown文件，同时
 
 post 下支持按照目录进行分类
-```
-arch
-cpplang
-golang
-```
 
-
+```shell
+▸ arch
+▸ cpplang
+▸ golang
+```
 
 ### 配置
-Hugo的默认配置文件是config.toml，可以将config.toml从 主题Jane中拷贝出来，修改为你自己的信息，最重要的是修改baseURL，可以定向到自己domain，基于github.io 的话就应该是这样的https://westfly.github.io 。
+
+Hugo的默认配置文件是config.toml，可以将config.toml从 主题Jane中拷贝出来，修改为你自己的信息，最重要的是修改baseURL，可以定向到自己domain，基于github.io 的话就应该是 [https://westfly.github.io](https://westfly.github.io)。
 
 配置项都有注释，请酌情修改即可。
 
-
 ### 发布
+
 如果本地预览成功了，就可以发布到github上了。
 这里需要注意将markdown的draft 修改为 false，否则不会发表。
 通过如下[脚本](https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script)可以一次性提交Repo。
@@ -126,6 +130,7 @@ cd ..
 ```
 
 ## 参考
+
 [使用hugo搭建个人博客站点](https://blog.coderzh.com/2015/08/29/hugo/)
 
 [如何在github.io搭建Hugo博客站](https://keysaim.github.io/post/blog/deploy-hugo-blog-in-github.io/)
