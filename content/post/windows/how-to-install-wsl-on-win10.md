@@ -1,6 +1,6 @@
 ---
 title: "Win10 中 WSL 安装指北"
-date: 2019-11-30T21:35:02+08:00
+date: 2019-12-1T21:35:02+08:00
 tags:
     - wsl
     - windows
@@ -220,7 +220,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ### 3.6 配置vscode
 
-都9102年了，可以尝试新的东西了。当前vs的版本有Remote功能，在应用市场搜索wsl，安装 Remote-WSL，可以在Windows下的VSCode中打开Ubuntu，一般情况下，直接Reload了就可以用。可以参考另外一篇文章，笔者推荐了些常用你的插件。
+都9102年了，可以尝试新的东西了。当前vs的版本有Remote功能，在应用市场搜索wsl，安装 Remote-WSL，
+可以在Windows下的VSCode中打开Ubuntu，一般情况下，直接Reload了就可以用。可以参考另外一篇文章，
+笔者推荐了些常用你的插件。
 
 ### 3.7 配置vim
 
@@ -233,6 +235,9 @@ curl -sLf https://spacevim.org/cn/install.sh | bash
 ## 4. 参考文档
 
 [官方WSL-Wiki](https://wiki.ubuntu.com/WSL)
+
 [wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
 [wsl升级到Ubuntu19.04](https://medium.com/@rockey5520/wsl-ubuntu-upgrade-to-disco-dingo-19-04-b4abff20452d)
+
 [how-to-upgrade-ubuntu-18-04-to-19-10-on-windows-10-linux-subsystem](https://www.how2shout.com/how-to/how-to-upgrade-ubuntu-18-04-to-19-10-on-windows-10-linux-subsystem.html)
