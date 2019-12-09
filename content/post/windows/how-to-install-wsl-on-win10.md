@@ -1,6 +1,6 @@
 ---
 title: "Win10 中 WSL 安装指北"
-date: 2019-12-1T21:35:02+08:00
+date: 2019-12-01T21:35:02+08:00
 tags:
     - wsl
     - windows
