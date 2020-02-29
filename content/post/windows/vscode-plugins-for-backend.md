@@ -76,6 +76,14 @@ Windows Registry Editor Version 5.00
 
 ## 常用快捷键 ##
 
+## 基础配置 ##
+
+
+
+打开 首选项，然后搜索 trimTrailingWhitespace，勾选即可，可以在保存文件时自动去掉行尾的空白字符
+
+  
+
 ## 辅助类插件 ##
 
 ### Chinese (Simplified) Language Pack for Visual Studio Code ###

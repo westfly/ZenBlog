@@ -131,7 +131,7 @@ lbs_release -a
 
 这种方法只能一个个版本的升级，从18.04不能直接升级到19.10版本，必须经过19.04。
 
-注意在这种方式下
+
 
 ### 3.4 图形界面
 
@@ -189,8 +189,7 @@ export PATH
 export LD_LIBRARY_PATH
 ```
 
-load_env 只支持一级目录遍历，也可以通过
-find 目录支持多级的bin的遍历。
+load_env 只支持一级目录遍历，也可以通过 find 目录支持多级的bin的遍历。
 
 #### 3.5.2 golang
 
@@ -217,6 +216,14 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 笔者也尝试过 按照 golang的方式解压到 Portable目录，基本上可行，但冗余的文件比较多。
 
 #### 3.5.4 python
+
+其实安装scons的时候，已经安装了python，网上有资料说scons完全支持python3，但是apt-get安装的版本依然是python2.7，但依然不必要纠结，用好就行。
+
+```shell
+#安装pip & pyenv
+```
+
+
 
 ### 3.6 配置vscode
 
