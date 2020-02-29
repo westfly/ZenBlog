@@ -55,7 +55,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
 [[menu.main]]
   name = "Links"
   weight = 50
-  url = "https://westlfy.github.io"
+  url = "https://westfly.github.io"
 
 
 [params]

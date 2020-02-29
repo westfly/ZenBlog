@@ -19,16 +19,18 @@ Windows作为应用最为广泛的操作系统之一，经过多年的发展，�
 
 * [github](www.github.com) 相当一部分工具类软件已经开源
 * [0daydown](www.0daydown.com) 会打包软件的安装包和软件的crack
-* [绿软](www.xdowns.com) Win10之前很多绿色软件都从这里下载，少部分不是绿色软件
+* [绿软](www.xdowns.com) Win10之前很多绿色软件都从这里下载，一般不是最新版，少部分不是绿色软件
 * [portableapps](https://portableapps.com/) 国外便携版下载站点，主攻开源和免费软件，Chrome & Firefox都可以找到
 
 ## 二. 系统增强 ##
 
 ### 开机启动项管理 ###
 
-微软收购[sysinternals](https://docs.microsoft.com/en-us/sysinternals/)后免费提供的一系列工具类软件，所有的工具软件均为免安装绿色软件，解压后，首次运行工具需要同意相关协议。[autoruns](https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns)是其中使用频率最高的，它能够提供开启启动的程序、服务、计划等，比Win10当前任务管理器上的启动项管理要强大许多。
+微软收购[sysinternals](https://docs.microsoft.com/en-us/sysinternals/)后免费提供了其下发布的工具类软件，所有的工具软件均为免安装绿色软件，解压后，首次运行工具需要同意相关协议。[autoruns](https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns)是其中使用频率最高的，它能够提供开启启动的程序、服务、计划等，比Win10当前任务管理器上的启动项管理要强大许多。
 
 可以通过[下载合集](https://download.sysinternals.com/files/SysinternalsSuite.zip) 将所有工具都下载，以备不时之需。
+
+![image-20191213153155905](C:\Users\Rayan\AppData\Roaming\Typora\typora-user-images\image-20191213153155905.png)
 
 ### Dism ++ ###
 
@@ -38,7 +40,11 @@ Windows作为应用最为广泛的操作系统之一，经过多年的发展，�
 
 [Dism++ 良心不流氓免费而强大的 Windows 系统优化与垃圾清理工具](https://www.iplaysoft.com/dism.html)
 
-清理系统垃圾，卸载系统软件
+[BleachBit](https://www.bleachbit.org/download/windows) 也可以试试看
+
+能够很好的清理系统垃圾，卸载系统软件
+
+![](C:\Users\Rayan\AppData\Roaming\Typora\typora-user-images\image-20191213153241852.png)
 
 ### TurboLaunch 多程序管理 ###
 
@@ -84,7 +90,9 @@ Ditto 增强系统的剪切板，在[Windows 10 Build 17666版本更新中，微
 
 ### WindowsTabs ###
 
-这个软件也不怎么更新了，被作者开源了。
+[WindowTabs](https://github.com/mauricef/WindowTabs)以前是收费软件，在2018年的时候，被作者在github上开源了，但也怎么更新了，有个fork的库提供[二进制编译版本的下载](http://github.com/leafOfTree/WindowTabs/releases)。
+
+[WindowsTabs.设置任意windows程序的多标签页使用](https://zhuanlan.zhihu.com/p/64850605)
 
 ### Quicker ###
 
@@ -94,9 +102,11 @@ quicker 是定位于工具类的中台，功能比较强大。
 
 Sandboxie 提供一个跟当前操作系统隔离的沙盒环境，能够在这个环境里测试软件，破解软件、养病毒等。
 
-沙盒技术在Win10中内置了后，迫使Sandboxie软件免费了。虽然网上有便携版本，但是既然要跟操作系统交互，还是使用安装版本。
+沙盒技术在Win10中内置了后，迫使Sandboxie软件免费了。虽然网上有便携版本，但是既然要跟操作系统交互，还是使用安装版本比较放心。
 
-[Win10大更新！Windows Sandbox沙盘功能体验](https://zhuanlan.zhihu.com/p/53849618)
+[Win10大更新！Windows Sandbox沙盘功能验](https://zhuanlan.zhihu.com/p/53849618)
+
+这个软件也给我们提供了一种绿化软件的思路，可以在Sandboxie 中安装，然后再拷贝回到宿主机上。
 
 ## 三. 系统维护 ##
 
@@ -118,7 +128,7 @@ F5R3D-XUPD6-4TD9B-2D2L4-354AX
 
 ### TreeSize ###
 
-[TreeSize](https://jam-software.com/treesize_free/)跟[spacesniffer](http://www.uderzo.it/main_products/space_sniffer/)一样是以图形化的方式显示目录或文件的占用情况，通过这种方式解决系统C盘空间不够用的问题。
+[TreeSize](https://jam-software.com/treesize_free/)跟[spacesniffer](http://www.uderzo.it/main_products/space_sniffer/)一样是以图形化的方式显示目录或文件的占用情况，通过这种方式可以非常直观地找出C盘的大文件占用情况，并有针对性的删除。
 
 ### PatchCleaner ###
 
@@ -136,7 +146,7 @@ F5R3D-XUPD6-4TD9B-2D2L4-354AX
 
 ### VSCode ###
 
-VSCode
+VSCode 是新一代的编程工具。
 
 ### XShell ###
 
@@ -165,6 +175,10 @@ Typora当前处于Beta免费版本，后续不排除收费的可能性，官方�
 ### Chrome ###
 
 [GoogleChrome](http://www.google.cn/chrome/) 是由Google公司开发的网页浏览器，一经推出就迅速占领了浏览器市场，也带动了业界软件版本号的升级，当前已经升级到79了，不敢想象到了三位数的版本后该怎么办。
+
+Google Chrome 虽然很好用，但在中国Google被屏蔽的情况下，其内置的服务不可用，安装的插件也只能采取离线的方式，但随着GoogleChrome屏蔽这种方式，门槛也越来越高。
+
+有需求的地方，就有市场，这是颠簸不破的真理。国内双核浏览器、360浏览器等都基于Google Chrome做了定制，而且也有一定的市场。
 
 ### Firefox ###
 
@@ -222,7 +236,7 @@ Aria2是一个命令行下**轻量级**、多协议、多来源的**下载工具
 
 ### PotPlayer ###
 
-软件更新比较快，基本上无损播放音视频。
+软件更新比较快，基本上无损播放音视频，满足需求无问题。
 
 ### 爱奇艺 ###
 
