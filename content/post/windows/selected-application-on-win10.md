@@ -20,7 +20,8 @@ Windows作为应用最为广泛的操作系统之一，经过多年的发展，�
 * [github](www.github.com) 相当一部分工具类软件已经开源
 * [0daydown](www.0daydown.com) 会打包软件的安装包和软件的crack
 * [绿软](www.xdowns.com) Win10之前很多绿色软件都从这里下载，一般不是最新版，少部分不是绿色软件
-* [portableapps](https://portableapps.com/) 国外便携版下载站点，主攻开源和免费软件，Chrome & Firefox都可以找到
+* [PortableApps](https://portableapps.com/) 国外便携版下载站点，主攻开源和免费软件，Chrome & Firefox都可以找到
+* [PortableAppK](https://portableappk.com/) 是最近国内便携版下载站点，某些软件需要积分才能下载
 
 ## 二. 系统增强 ##
 
@@ -30,7 +31,7 @@ Windows作为应用最为广泛的操作系统之一，经过多年的发展，�
 
 可以通过[下载合集](https://download.sysinternals.com/files/SysinternalsSuite.zip) 将所有工具都下载，以备不时之需。
 
-![image-20191213153155905](C:\Users\Rayan\AppData\Roaming\Typora\typora-user-images\image-20191213153155905.png)
+![image-20191213153155905](image-20191213153155905.png)
 
 ### Dism ++ ###
 
@@ -44,7 +45,7 @@ Windows作为应用最为广泛的操作系统之一，经过多年的发展，�
 
 能够很好的清理系统垃圾，卸载系统软件
 
-![](C:\Users\Rayan\AppData\Roaming\Typora\typora-user-images\image-20191213153241852.png)
+![image-20191213153241852.png](image-20191213153241852.png)
 
 ### TurboLaunch 多程序管理 ###
 
@@ -52,7 +53,7 @@ Windows作为应用最为广泛的操作系统之一，经过多年的发展，�
 
 [TurboLaunch](http://www.savardsoftware.com/turbolaunch/) 这个从WinXP时代就伴随左右的软件，这些年虽然没有更新，但在新时代依然有很强的生命力。建议启用安装包安装，因为它可以管理其它的Portable软件。
 
-默认情况下，只有3个Tab，可以在 设置 中导出配置备份为Reg。
+默认情况下，只有3个Tab，可以在选项中设置。提供批量导出配置备份为Reg的功能。
 
 ### Wox ###
 
@@ -96,7 +97,7 @@ Ditto 增强系统的剪切板，在[Windows 10 Build 17666版本更新中，微
 
 ### Quicker ###
 
-quicker 是定位于工具类的中台，功能比较强大。
+quicker 是定位于工具类的中台，功能比较强大，暂时还为深入研究使用。
 
 ### Sandboxie ###
 
@@ -142,7 +143,7 @@ F5R3D-XUPD6-4TD9B-2D2L4-354AX
 
 ### WSL ###
 
-在Windows上安装Linux，参考博文 how-to-install-wsl-on-win10.md
+在Windows上安装Linux，参考博文 [Win10 中 WSL 安装指北](http://westfly.github.io/post/windows/how-to-install-wsl-on-win10/)
 
 ### VSCode ###
 
@@ -231,6 +232,12 @@ Aria2是一个命令行下**轻量级**、多协议、多来源的**下载工具
 [为什么国内 BT 环境如此恶劣？下载速度如此糟糕？我总结了六点原因](https://zhuanlan.zhihu.com/p/87193566)
 
 需要配合github上的Tracker更新才能有速度，但貌似也需要看具体的资源。
+
+### Xdown ###
+
+[Xdown](https://xdown.org/) 是新晋崛起的一款免费无广告的 IDM & Torrent 合成体下载软件。[Xdown](https://xdown.org/) 不但支持标准FTP/HTTP/HTTPS/HTTP2协议下载 ，[Xdown](https://xdown.org/) 还支持torrent/磁力链/百度云下载，功能十分强大，值得使用。
+
+
 
 ## 七. 影音娱乐 ##
 
