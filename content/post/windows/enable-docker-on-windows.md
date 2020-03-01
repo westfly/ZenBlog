@@ -32,9 +32,7 @@ Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /AL
 
 
 
-![image-20191227195843799](content/post/windows/images/image-20191227195843799.png)
-
-![image-20191227195843799](images/image-20191227195843799.png)
+![image-20191227195843799](image-20191227195843799.png)
 
 按Y重启之后，就可以在开始菜单-所有应用-Windows管理工具中找到“Hyper-V管理器”了，打开它就能使用Hyper-V。
 
@@ -50,7 +48,7 @@ REG ADD "HKEY_LOCAL_MACHINE\software\Microsoft\Windows NT\CurrentVersion" /v Edi
 
 打开任务管理器，然后转到“性能”选项页，在右下角虚拟化中我们就可以看到了，如果是不可用，那么就是没有开启了。如下图:
 
-![image-20191227204836837](content/post/windows/images/image-20191227204836837.png)
+![image-20191227204836837](image-20191227204836837.png)
 
 ![image-20191227204836837](images/image-20191227204836837.png)
 
@@ -60,7 +58,7 @@ Docker提供在windows下的安装包[docker-ce-desktop-windows](https://hub.doc
 
 [macOS - Download Community Edition (CE)](https://download.docker.com/mac/stable/Docker.dmg)
 
-[Windows -Download Community Edition (CE)](https://download.docker.com/win/stable/Docker for Windows Installer.exe)
+[Windows -Download Community Edition (CE)]([https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe)
 
 ### 3. 设置在wsl中登陆 ###
 
