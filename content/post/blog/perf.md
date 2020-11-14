@@ -1,3 +1,17 @@
+---
+title: "后端程序员的VSCode插件配置"
+date: 2019-12-02T21:35:02+08:00
+tags:
+    - vscode
+    - windows
+categories:
+    - windows
+comment: false
+draft: true
+---
+
+
+
 perf
 
 使用`perf record`命令可以`profile`应用程序 （编译程序要使用`-g`，推荐使用`-g -O2`

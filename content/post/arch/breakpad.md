@@ -1,3 +1,15 @@
+---
+title: "后端程序员的VSCode插件配置"
+date: 2019-12-02T21:35:02+08:00
+tags:
+    - vscode
+    - windows
+categories:
+    - windows
+comment: false
+draft: true
+---
+
 下载breakpad源码[https://github.com/google/breakpad](https://github.com/google/breakpad)，在Linux环境下编译。
  编译时，我这里遇到错误，缺少 src/third_party/lss/linux_syscall_support.h
  去github上搜索下载这个文件（原Google的git连接已经失效），[https://github.com/webrtcmirrors/vendor_linux-syscall-support](https://github.com/webrtcmirrors/vendor_linux-syscall-support)，我用的是这个。注意很多是针对MIPS的，并不适用。

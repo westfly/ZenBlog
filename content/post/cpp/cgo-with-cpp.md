@@ -1,3 +1,15 @@
+---
+title: "后端程序员的VSCode插件配置"
+date: 2019-12-02T21:35:02+08:00
+tags:
+    - vscode
+    - windows
+categories:
+    - windows
+comment: false
+draft: true
+---
+
 ### cgo 最小的cgo程序 ###
 
 我理解一个最小的 cgo调用程序。

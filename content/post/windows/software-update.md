@@ -1,4 +1,4 @@
-----
+---
 title: "Win10下的软件批量更新策略"
 date: 2020-02-29T09:35:02+08:00
 tags:
@@ -8,7 +8,7 @@ categories:
   - windows
 comment: false
 draft: false
-----
+---
 
 ## 1. 背景 ##
 

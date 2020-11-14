@@ -1,4 +1,4 @@
-----
+---
 title: "scoop 初体验"
 date: 2020-08-22T09:35:02+08:00
 tags:
@@ -8,7 +8,7 @@ categories:
   - windows
 comment: false
 draft: false
-----
+---
 
 ## 简介 ##
 

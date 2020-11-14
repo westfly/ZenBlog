@@ -1,14 +1,14 @@
-+++
-categories = ["Development", "VIM"]
-date = Hugo博客头
-description = "spf13-vim is a cross platform distribution of vim plugins and resources for Vim."
-slug = "spf13-vim-3-0-release-and-new-website"
-tags = [".vimrc", "plugins", "spf13-vim", "vim"]
-title = "spf13-vim 3.0 release and new website"
-
-+++
-
-
+---
+title: "后端程序员的VSCode插件配置"
+date: 2019-12-02T21:35:02+08:00
+tags:
+    - vscode
+    - windows
+categories:
+    - windows
+comment: false
+draft: true
+---
 
 ### 参考资料 ###
 

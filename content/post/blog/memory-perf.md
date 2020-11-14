@@ -1,6 +1,16 @@
-linux
+---
+title: "后端程序员的VSCode插件配置"
+date: 2019-12-02T21:35:02+08:00
+tags:
+    - vscode
+    - windows
+categories:
+    - windows
+comment: false
+draft: true
+---
 
-----
+
 
 TCMalloc全称Thread-Caching Malloc，即线程缓存的malloc，实现了高效的多线程内存管理，用于替代系统的内存分配相关的函数。
 

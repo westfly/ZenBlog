@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
-hugo server  --buildDrafts --watch
+if [[ $# -gt 0 ]]; then
+    hugo server  --buildDrafts --watch
+else
+    hugo server  --watch
+fi
