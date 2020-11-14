@@ -19,7 +19,7 @@ draft: true
 
 [Consul](https://www.consul.io/) 是一个用来实现分布式系统服务发现与配置的开源工具。它内置了服务注册与发现框架、分布一致性协议实现、健康检查、Key/Value存储、多数据中心方案，不再需要依赖其他工具（比如 ZooKeeper 等），使用起来也较为简单。
 
-Consul 本质上说是将分布式的问题单独剥离出来，通过数据
+Consul 本质上说是将分布式的问题单独剥离出来，通过外部的分布式实现。
 
 是Go实现的。
 
@@ -48,7 +48,7 @@ consul kv get -detailed -recurse spacename/mlflow
 
 #### Watch ####
 
-Watch 是
+Watch 是一种回调的方式。
 
 WebUI
 
@@ -69,11 +69,7 @@ consul 不提供第三方的SDK，通过提供HTTP接口，返回JSON格式串�
 
 对于递归的接口，用户需要自己保存变化。
 
-可以通过modify-index 字段标识。
-
-这种变化的保存。
-
-
+可以通过modify-index 字段标识这种变化。
 
 ### 多机房 ###
 
@@ -114,6 +110,12 @@ void GetIndex() {
 
 
 #### 引用计数 ####
+
+```cpp
+class InvertIndex {
+   std::map<uint64_t, std::shared_ptr<IndexedBuilder>> index;
+}
+```
 
 
 

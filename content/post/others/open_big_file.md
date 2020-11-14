@@ -11,16 +11,11 @@ draft: true
 ---
 
 
-一般情况下，我们对都需要处理大文件。用脚本处理尤其方便，
-但有些脚本对大文件的出有些问题，所以我们按照需要处理。
+一般情况下，我们对都需要处理大文件。用脚本处理尤其方便，但有些脚本对大文件的出有些问题，所以我们特殊处理下。
 
 ## python
 
-在python中如果不处理编码问题的话，读写问题是很方便的一件事。一般的程序都会告诉你，按行处理的模式为
-
-
-
-[how-to-read-large-file-line-by-line-in-python](http://stackoverflow.com/questions/8009882/how-to-read-large-file-line-by-line-in-python)
+在python中如果不处理编码问题的话，读写问题是很方便的一件事。一般的程序都会告诉你，按行处理的模式为[how-to-read-large-file-line-by-line-in-python](http://stackoverflow.com/questions/8009882/how-to-read-large-file-line-by-line-in-python)
 
 ```python
 def batch_url_normalize(filename):

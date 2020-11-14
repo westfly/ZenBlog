@@ -101,6 +101,8 @@ sudo service ssh --full-restart
 Set wshell=wscript.createobject("wscript.shell")
 wshell.run "C:\Windows\System32\bash.exe",0
 wshell.run "C:\Windows\System32\bash.exe  -c 'sudo /usr/sbin/service ssh start'",0
+' for wls2
+wshell.run "wsl -d Ubuntu-20.04 -u root /etc/init.d/ssh start"
 Set wshell=Nothing
 ```
 
@@ -137,6 +139,8 @@ lbs_release -a
 
 个人认为图形界面不太需要，有兴趣的可以参考如下文章进行尝试
 [玩转 WSL 并配置Linux下的开发调试环境(Linux初学者福音) - 知乎](https://zhuanlan.zhihu.com/p/49227132)
+
+https://autoize.com/xfce4-desktop-environment-and-x-server-for-ubuntu-on-wsl-2/
 
 ### 3.5 开发环境
 

@@ -7,7 +7,7 @@ tags:
 categories:
     - windows
 comment: false
-draft: false
+draft: true
 ---
 
 
@@ -56,6 +56,8 @@ Docker提供在windows下的安装包[docker-ce-desktop-windows](https://hub.doc
 
 [Windows -Download Community Edition (CE)]([https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe)
 
+在Win10 20H1 发布后，docker可以用[WSL2](https://docs.docker.com/docker-for-windows/wsl-tech-preview/) 作为虚拟化的后端，即也可以用home版安装。
+
 ### 3. 设置在wsl中登陆 ###
 
 由于 `Docker daemon`无法在wsl下运行，但是可以连接到远程的daemon服务，比如[docker-for-windows](https://docs.docker.com/docker-for-windows/)。
@@ -69,6 +71,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 国内用户可以将源修改为清华的，可能会快一点
 
 ```shell
+curl -fsSL https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
 ```
 

@@ -13,7 +13,7 @@ draft: true
 ---
 根据
 [聊聊C++11](https://www.bilibili.com/video/av7701532)的内容整理而来
-的特性，也会补充些C++14、C++17的相关内容，文章会根据自己的学习过程会定期做些内容的更新。
+的特性，也会补充些C++14、C++17的相关内容，文章会根据自己的学习过程，定期做些内容的更新。
 
 ## 1. initializer_list ##
 
@@ -24,7 +24,6 @@ int array [] = {1, 2, 3}
 for(int i = 0; i < 3; ++i) {
     a.push_back(arry[i]);
 }
-
 // c++11
 #include <initializer_list>
 vector<int> v = {1, 2, 3}
@@ -34,7 +33,7 @@ vector<int> v = {1, 2, 3}
 
 ## 2. Uniform Initialziation ##
 
-cpp在语言的层面为类对象的初始化与普通数组以及POD的初始化方法提供了统一的桥梁，极大的改善了写模板。
+Cpp在语言的层面为类对象的初始化与普通数组以及POD的初始化方法提供了统一的桥梁，极大的改善了写模板。
 
 搜索函数时有最高的优先级，用户可以自定义
 
@@ -154,7 +153,8 @@ if (a == o) // compiler fails, no defining opertor ==
 ```cpp
 #include <iostream>
 template<typename T>
-std::ostream& operator<<(typename std::enable_if<std::is_enum<T>::value, std::ostream>::type& stream, const T& e)
+std::ostream& operator<<(typename std::enable_if<std::is_enum<T>::value, 
+                         std::ostream>::type& stream, const T& e)
 {
     return stream << static_cast<typename
     std::underlying_type<T>::type>(e);

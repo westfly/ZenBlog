@@ -2,19 +2,21 @@
 title: "Git简明教程"
 date: 2020-01-07T21:35:02+08:00
 tags:
-    - c++17
+    - git
 categories:
     - cpp
 comment: false
-draft: true
+draft: false
 ---
 
 
-## 安装 ##
+## 1. 安装 ##
 
 Git 是跨平台的 可以下载安装 [GitForWindows](https://gitforwindows.org/) ，安装后将其添加到系统的Path即可。
 
-### 配置项 ###
+在Linux下可以直接用命令行安装即可，主流的发行版本默认是自带的。
+
+### 1.1 配置项 ###
 
 除了安装之外，需要配置一下
 
@@ -50,7 +52,7 @@ git help config
 
 
 
-### 免登陆配置 ###
+### 1.2 免登陆配置 ###
 
 通过如下命令生成公钥和私钥
 
@@ -70,9 +72,11 @@ Host github.com
 
 
 
-## 简介 ##
+## 2. 简介 ##
 
-### 基本命令 ###
+### 2.1 基本命令 ###
+
+如下基本命令遵循建立、下载、修改、推送各个阶段
 
 ```shell
 # 初始化一个空的repo
@@ -94,13 +98,13 @@ git push origin master:master
 
 
 
-### 分支操作 ###
+### 2.2 分支操作 ###
+
+ 分支的概念是为了多版本开发引入的，可以有多个branch，Git提供合并到主干（master）的功能。
 
 ![branches](https://rogerdudler.github.io/git-guide/img/branches.png)
 
-工作目录
-
-![branches](https://rogerdudler.github.io/git-guide/img/trees.png)
+如下是branches的一些命令
 
 ```shell
 # 如果没有则新建名为dev的branches
@@ -119,7 +123,15 @@ git branch -m newdev
 
 ```
 
-### 更新和合并 ###
+#### 2.3 工作目录 ####
+
+工作目录其实是一个本地的修改镜像，当用户提交后，推修改本地的Index，最后一次提交的记录被称为HEAD
+
+![branches](https://rogerdudler.github.io/git-guide/img/trees.png)
+
+
+
+### 2.4 更新和合并 ###
 
 ```shell
 #从remote的branch拉取最新的修改	
@@ -139,11 +151,13 @@ git pull & git merge 都会将remote & local的改动进行合并。
 git pull --rebase origin master:master
 # 解决完冲突继续rebase
 git rebase --continue
+# 如果没有修改（或者解决冲突后是平的）则 --skip 掉即可
+git rebase --skip
 ```
 
 
 
-### Diff  和 Patch ###
+### 2.5 Diff  和 Patch ###
 
 Git 提供了两种补丁方案，一是用git diff生成的UNIX标准补丁.diff文件，二是git format-patch生成的Git专用.patch 文件。.diff文件只是记录文件改变的内容，不带有commit记录信息，多个commit可以合并成一个diff文件。.patch文件带有记录文件改变的内容，也带有commit记录信息,每个commit对应一个patch文件。
 
@@ -157,7 +171,7 @@ git apply function.diff
 
 
 
-### 撤销与恢复 ###
+### 2.6 撤销与恢复 ###
 
 ```shell
 git reset # 将已经add过的改回"Changed but not updated"状态
@@ -169,11 +183,9 @@ git reset HEAD^ # 将本地仓库的最近一个提交版本干掉. 最好不要
 
 
 
-## 标签 ##
+## 3. 标签 ##
 
 标签类似于svn的tag，提供一个发布的节点命名，可以是一个功能特性或BugFix等。
-
-
 
 ```shell
 # 查看当前所有Tag
@@ -188,19 +200,48 @@ git tag -d v1.4
 
 一般gitlab会提供WebUI，也可以在界面上操作，比较方便。
 
-## 杂项 ##
+## 4. 杂项 ##
 
-### 添加gitignore文件 ###
+### 4.1 添加gitignore文件 ###
 
 ```shell
 echo "*.d" > .gitignore #忽略编译生成的deps文件
 ```
 
+业界 gitignore 文件可以从 https://www.gitignore.io/ 上查看并下载，如下是C++的一个示例
 
+```shell
+### C++ ###
+# Prerequisites
+*.d
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+# Precompiled Headers
+*.gch
+*.pch
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+# Fortran module files
+*.mod
+*.smod
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+# Executables
+*.exe
+*.out
+*.app
 
-## 历史记录 ##
+```
 
-
+### 4.2 历史记录 ###
 
 ```shell
 # 查看 当前branch的提交记录
@@ -211,6 +252,17 @@ git log --author=aresyang
 git log --pretty=oneline
 # 查看有哪些文件修改
 git log --name-status
+```
+
+### 4.2 跨Repo合并更新 ###
+
+针对第三方库的情况，合并原Repo的Feature更新，如下是更新 https://github.com/chen3feng/toft 的方式，upstream 的名称可以修改。
+
+```shell
+git remote add upstream https://github.com/chen3feng/toft
+git fetch upstream
+git pull --rebase upstream master:master
+git push orignal master:master
 ```
 
 

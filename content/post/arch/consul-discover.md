@@ -58,7 +58,48 @@ event – 监视用户事件
 
 
 
+
+
+
+
+| Key                                      | 含义                                                         |
+| ---------------------------------------- | ------------------------------------------------------------ |
+| /v1/agent/checks                         | 返回本地agent注册的所有检查(包括配置文件和HTTP接口)          |
+| /v1/agent/services                       | 返回本地agent注册的所有 服务                                 |
+| /v1/agent/members                        | 返回agent在集群的gossip pool中看到的成员                     |
+| /v1/agent/self                           | 返回本地agent的配置和成员信息                                |
+| /v1/agent/join/<address>                 | 触发本地agent加入node                                        |
+| /v1/agent/force-leave/<node>             | 强制删除node                                                 |
+| /v1/agent/check/register                 | 在本地agent增加一个检查项，使用PUT方法传输一个json格式的数据 |
+| /v1/agent/check/deregister/<checkID>     | 注销一个本地agent的检查项                                    |
+| /v1/agent/check/pass/<checkID>           | 设置一个本地检查项的状态为passing                            |
+| /v1/agent/check/warn/<checkID>           | 设置一个本地检查项的状态为warning                            |
+| /v1/agent/check/fail/<checkID>           | 设置一个本地检查项的状态为critical                           |
+| /v1/agent/service/register               | 在本地agent增加一个服务项，使用PUT方法传输一个json格式的数据 |
+| /v1/agent/service/deregister/<serviceID> | 注销一个本地agent的服务项                                    |
+
+```shell
+json_service_fmt='{"id":"node-%s-test","name":"rs-monitor","address":"%s","port":%s,"tags":["rs","monitor"],"checks":[{"http":"http://%s:%s/metrics","interval":"35s"}]}'
+data=$(printf $json_service_fmt $ip $ip $port $ip $port)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 实践 ###
+
+
+
+多云的同步
 
 
 

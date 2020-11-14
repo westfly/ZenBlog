@@ -97,7 +97,7 @@ Chinese (Simplified) Language Pack for Visual Studio Code 是官方提供的将�
 
 ### Dark ###
 
-主题插件
+主题插件，深色的对眼睛好。
 
 ## 开发类插件 ##
 
