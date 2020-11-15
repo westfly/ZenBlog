@@ -66,7 +66,7 @@ auto print_elem = [](auto &&m) {
 cista::for_each_field(a, print_elem);
 ```
 
-如上是通过 [fmt](https://github.com/fmtlib/fmt) 来实现。
+如上打印输出是通过 [fmt](https://github.com/fmtlib/fmt) 来实现，[fmt](https://github.com/fmtlib/fmt) 能够很好地通过 {} 来达到占位。
 
 [type_name](https://github.com/willwray/type_name) 来源于[Stack Overflow](http://stackoverflow.com/a/18369732) 的问题，当然cista 中也有实现。
 

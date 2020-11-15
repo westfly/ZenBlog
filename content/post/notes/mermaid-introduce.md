@@ -1,16 +1,16 @@
 ---
-title: "后端程序员的VSCode插件配置"
-date: 2019-12-02T21:35:02+08:00
+title: "利用 mermaid在Markdown中画图"
+date: 2020-11-02T21:35:02+08:00
 tags:
     - vscode
     - windows
 categories:
     - windows
 comment: false
-draft: true
+draft: false
 ---
 
-[mermaid](https://mermaidjs.github.io/) 是一个工具
+[mermaid](https://mermaidjs.github.io/) 是一个简明的描述做图的文本描述语言
 
 ```reStructuredText
 Generation of diagrams and flowcharts from text in a similar manner as markdown
@@ -83,11 +83,7 @@ graph TD
     B-->E(A fa:fa-camera-retro 也许?);
 ```
 
-```
-https://oapi.dingtalk.com/robot/send?access_token=59b5d1299b103993190c9571bbe9659864e1cb96fe44cfa70b35a520cb274fb1
 
-SEC59691c18060a1af0c89bbc842254af3b401ba26b6b02206ade78a901307786ca
-```
 
 
 

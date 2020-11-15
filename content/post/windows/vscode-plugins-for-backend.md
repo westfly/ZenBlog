@@ -7,21 +7,20 @@ tags:
 categories:
     - windows
 comment: false
-draft: true
+draft: false
 ---
-## 简介 ##
+## 1. 简介 ##
 
-[VSCode](https://code.visualstudio.com/) 是基于XX开发，支持Windows、Linux、MacOS。
+[VSCode](https://code.visualstudio.com/) 是基于Electron开发，支持Windows、Linux、MacOS。
 
 当前官网提供两个版本，一个是两周左右发布Stable版本，一个是Nightly发布的Insider版本。
-某些新功能会新出现在 Insider 版本中，稳定后才会提供在Stable版本中，
-比如，后来提供在。
+某些新功能会新出现在 Insider 版本中，稳定后才会提供在Stable版本中，比如，RemoteSSH功能。
 我是Insider版本提供RemoteSSH功能时完全入坑VSCode的。
 随着使用的深入，累计了一些好用的插件，推荐给大家。
 
 **注意**所有的插件都可以选中后查看帮助，无须再次查找，记住官方的文档往往是最全的。
 
-## 便携版 ##
+### 1.1 便携版 ###
 
 VSCode提供的Zip版本支持 [便携模式](https://code.visualstudio.com/docs/editor/portable)，方便数据迁移或在U盘中使用。
 
@@ -74,9 +73,9 @@ Windows Registry Editor Version 5.00
 
 当然，我们也可以选用EasyMenu这个工具进行添加。
 
-## 常用快捷键 ##
+## 1.2 常用快捷键 ##
 
-## 基础配置 ##
+## 1.3 基础配置 ##
 
 
 
@@ -84,30 +83,32 @@ Windows Registry Editor Version 5.00
 
   
 
-## 辅助类插件 ##
+## 2. 辅助类插件 ##
 
-### Chinese (Simplified) Language Pack for Visual Studio Code ###
+### 2.1 Chinese (Simplified) Language Pack for Visual Studio Code ###
 
 Chinese (Simplified) Language Pack for Visual Studio Code 是官方提供的将菜单本地化为中文的插件，可以自行选择安装。
 
-### vscode-icons ###
+### 2.2 vscode-icons ###
 
 [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) 插件可以实现对各种文件类型的文件前的图标进行优化显示，这样我们在查看长长的文件列表的时候，
 可以直接通过文件的图标就可以快速知道文件的类型，而不是去看文件的后缀。
 
-### Dark ###
+### 2.3 Dark ###
 
 主题插件，深色的对眼睛好。
 
-## 开发类插件 ##
+## 3. 开发增强插件 ##
 
-### RemoteSSH ###
+### 3.1 RemoteSSH ###
 
-### RemoteWSL ###
+当前会自动推荐，这个插件对网络有所依赖。
+
+### 3.2 RemoteWSL ###
 
 如果系统中安装了WSL，VSCode会推荐你安装RemoteWSL，感觉RemoteWSl是RemoteSSH的一个特化版本，配置好了HOST、User等信息。
 
-### Git ###
+### 3.3 Git ###
 
 睡着Github的红火，SVN越发要退出历史的舞台了。
 
@@ -117,15 +118,15 @@ Chinese (Simplified) Language Pack for Visual Studio Code 是官方提供的将�
 
 [GitProjectManager](https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager)
 
-### Docker ###
+### 3.4 Docker ###
 
 这个插件是无意中搜索到的，跟RemoteSSH配合使用可以显式远程宿主机上的 Docker，通过鼠标右键的方式，可以停止容器、删除镜像等，避免docker的命令操作，比较方便。
 
-### CodeRunner ###
+### 3.5 CodeRunner ###
 
 如果你需要学习或者接触各种各样的开发语言，那么 [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 插件可以让你不用搭建各种语言的开发环境，直接通过此插件就可以直接运行对应语言的代码，非常适合学习或测试各种开发语言。
 
-### Settings Sync ###
+### 3.6 Settings Sync ###
 
 Settings Sync 同步通过github账号同步vscode插件，主题配置
 
@@ -134,50 +135,52 @@ shift + alt + u // 上传本地配置至github
 shift + alt + d // 获取github远程配置
 ```
 
-### TODO Highlight ###
+貌似当前官方的VSCode已经内置了，这个插件就作废了吧。
+
+### 3.7 TODO Highlight ###
 
 [TODO Highlight](https://link.zhihu.com/?target=https%3A//marketplace.visualstudio.com/items%3FitemName%3Dwayou.vscode-todo-highlight) 能够高亮
 
-### Indent-Rainbow ###
+### 3.8 Indent-Rainbow ###
 
 [Indent-Rainbow](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 
-### Bracket Pair Colorizer ###
+### 3.9 Bracket Pair Colorizer ###
 
 Bracket Pair Colorizer
 
 [Bracket Pair Colorizer: 为代码中的括号添上一抹亮色](https://zhuanlan.zhihu.com/p/54052970)
 
-## 语法插件 ##
+## 4. 语法插件 ##
 
-### Markdown ###
+### 4.1 Markdown ###
 
 系统默认是支持Markdown的预览的，有第三方的支持能变得更为强大。
 
-#### Markdown All in One ####
+**Markdown All in One**
 
-Markdown All in One 插件提供了一键式的
+**Markdown All in One** 插件提供了一键式的
 
-#### Markdown Preview Enhanced ####
+**Markdown Preview Enhanced**
 
 [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/) 是一个很好用的完善预览功能的插件，可以更加形象的展示所编写的pdf格式的文档样式。
 安装后，可以通过Ctrl+K 再按v调用预览效果。
 
-### Proto3 ###
+### 4.2 Proto3 ###
 
 [vscode-proto3](https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3) 除了提供语法高亮功能外，配置了protoc的路径后，还提供语法检查功能。
 
 一些快捷的自动完成功能，具体可以参考插件的wiki。
 
-### Thrift ###
+### 4.3 Thrift ###
 
-### yaml ###
+### 4.4 yaml ###
 
-### Toml ###
+### 4.5 Toml ###
 
 [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml) 提供了对 Toml 文档的hick
 
-### Json ###
+### 4.6 Json ###
 
 提供了对JSON文件格式化的功能，类似于JsonView的功能。
 
@@ -187,19 +190,17 @@ Markdown All in One 插件提供了一键式的
 
 [Clang-Format](http://clang.llvm.org/docs/ClangFormat.html) is a tool to format
 
-## 语言开发插件 ##
+## 5. 语言开发插件 ##
 
-### Cpp ###
+### 5.1 C++ ###
 
-#### 自动完成 主要是在文件下的 .vscode 配置 cpp.json ####
+自动完成 主要是在文件下的 .vscode 配置 cpp.json 跳转
 
-#### 跳转 ####
+### 5.2 Python ###
 
-### python ###
+### 5.3 Rust ###
 
-### Rust ###
-
-### Go ###
+### 5.4 Go ###
 
 ## 参考文章 ##
 

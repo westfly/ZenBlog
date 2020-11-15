@@ -24,7 +24,7 @@ draft: false
 
 Win10下有些UWP程序的更新可以在应用商店做，但MicrosoftStore基本上是个半残的状态，好用的软件不太多，而且受开发的平台限制，功能也不如传统的Windows桌面应用齐全，而且更新也不太及时，典型的如网易云音乐。
 
-UWP的一些核心功能都在，甚至爱奇艺等UWP App在某一段时间内，因为无广告等特性，往往比桌面应用受欢迎，毕竟类似于白嫖的会员。
+UWP软件的一些核心功能都在，甚至爱奇艺等UWP App在某一段时间内，因为无广告等特性，往往比桌面应用受欢迎，毕竟类似于白嫖的会员。
 
 ### 2.2 电脑管家 ###
 
@@ -67,7 +67,23 @@ SUMo 扫描某个目录下的软件，获取软件的版本，并与在线服务
 
 ### 2.4自主更新 ###
 
-[PortableApps](https://portableapps.com/) 支持的便携软件是有限的，而且是国外开发的，对国内的软件支持不是很好。国内有网站应用[PortableApps](https://portableapps.com/)提供的相关技术，产生了自己便携软件，如 *[PortableAppC](https://www.portableappc.com)*（已经倒闭了）。最近有家 [ProtableAppK](https://portableappk.com/)通过搭建会员体系，提供高质量的应用软件下载，是一个比较好的思路，但未提供自动升级的接口，可以按照需求自主下载更新。
+支持的便携软件是有限的，而且是国外开发的，对国内的软件支持不是很好。
+
+国内有网站应用[PortableApps](https://portableapps.com/)提供的相关技术，产生了自己便携软件，如 *[PortableAppC](https://www.portableappc.com)*（已经倒闭了）。最近有家 [ProtableAppK](https://portableappk.com/)通过搭建会员体系，提供高质量的应用软件下载，是一个比较好的思路，但未提供自动升级的接口，可以按照需求自主下载更新。
+
+### 2.5 scoop 更新 ###
+
+[scoop](https://scoop.sh/) 是Windows下的基于命令行的管理软件，类似于Ubuntu下的apt 和Centos下的yum工具。
+
+我现在已经迁移到这个平台下了，其绿色的不影响系统参数的理念与我不谋而合。通过添加热门的仓库列表，可以实现常用软件的接入。
+
+2.6 WSCC 更新
+
+[WSCC（Windows System Control Center）](http://www.kls-soft.com/wscc/) 是一个管理软件，可以更新，升级某些特定源下的软件。
+
+[官方提供](http://www.kls-soft.com/wscc/downloads.php)多种格式的下载链接，如绿色版，便携版等。
+
+可以了多种源工具的工具下载，并有区分X64，在当前架构下，一般请选择X64Bit的软件进行安装。
 
 ## 3. 总结 ##
 

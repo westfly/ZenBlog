@@ -123,7 +123,7 @@ git branch -m newdev
 
 ```
 
-#### 2.3 工作目录 ####
+### 2.3 工作目录 ###
 
 工作目录其实是一个本地的修改镜像，当用户提交后，推修改本地的Index，最后一次提交的记录被称为HEAD
 
@@ -153,6 +153,14 @@ git pull --rebase origin master:master
 git rebase --continue
 # 如果没有修改（或者解决冲突后是平的）则 --skip 掉即可
 git rebase --skip
+```
+
+如果是fork第三方的仓库，为了跟原作者的repo通过，可以通过如下方式
+
+```shell
+git remote add upstream https://github.com/sogou/workflow
+git fetch upstream
+git merge upstream/master
 ```
 
 

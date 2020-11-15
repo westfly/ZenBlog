@@ -204,7 +204,22 @@ export GOROOT=${$(which go)%/bin/go}
 export GOPAHT=$GOROOT/3rdparty
 ```
 
-考虑到GOPATH有特殊的含义。
+在 Go 1.8 版本之前，GOPATH 环境变量默认是空的。从 Go 1.8 版本开始，Go 开发包在安装完成后，将 GOPATH 赋予了一个默认的目录
+
+GOPATH 在不同平台上的安装路径
+
+| 平  台       | GOPATH 默认值    | 举 例             |
+| ------------ | ---------------- | ----------------- |
+| Windows 平台 | %USERPROFILE%/go | C:\Users\$User\go |
+| Unix 平台    | $HOME/go         | /home/$user/go    |
+
+GOPATH可以设置为多个，设置完后，可以用 go env 查看相关的环境的配置
+
+```shell
+go env
+```
+
+
 
 #### 3.5.3 rust-lang
 
@@ -217,7 +232,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 其会在HOME目录下建立 .rustup & .cargo 两个目录。
 今后的更新操作可以使用rustup操作即可。
 
-笔者也尝试过 按照 golang的方式解压到 Portable目录，基本上可行，但冗余的文件比较多。
+笔者也尝试过 按照 golang的方式解压到 Portable目录，基本上可行，但冗余的文件比较多，还是用官方自带的更新工具更好，不用自己造轮子。
 
 #### 3.5.4 python
 

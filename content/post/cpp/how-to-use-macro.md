@@ -7,12 +7,12 @@ tags:
 categories:
     - cpp
 comment: false
-draft:  false
+draft:  true
 ---
 
 宏比较重要，缺点是类型丢失，不好调试。
 
-一般用法，函数替代
+在C++中一般用法，函数替代
 
 
 
@@ -119,5 +119,7 @@ https://en.wikipedia.org/wiki/X_Macro
 
 基本上讲解宏就到此为止了。
 
+## 参考 ##
 
+https://gcc.gnu.org/onlinedocs/cpp/Macros.html
 

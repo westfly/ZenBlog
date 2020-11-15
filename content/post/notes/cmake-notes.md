@@ -356,7 +356,13 @@ target_link_libraries(leveldb Threads::Threads)
 
 ### 2.5 子工程 ###
 
-主要是 add_subdirectory 指令。
+主要是 add_subdirectory 指令，作用为添加一个子目录并构建该子目录
+
+```cmake
+add_subdirectory (source_dir [binary_dir] [EXCLUDE_FROM_ALL])
+```
+
+子目录下应该有个CMakefile.txt 文件，实现外部thirdparty的集成，如下是从批量集成的示例 [submodules](https://github.com/westfly/3rdparty/blob/master/submodules/CMakeLists.txt) 中摘取出来的例子
 
 ```cmake
 macro(add_test_library name libname)
@@ -398,7 +404,7 @@ const char* ver = "${BUILD_VERSION}";
 const char* path = "@CMAKE_SOURCE_DIR@";
 ```
 
-#### 2.6.2 protobuf 生成 ####
+#### 2.6.2 Protobuf 生成 ####
 
 ```cmake
 # find the protobuf compiler and libraries
@@ -423,7 +429,7 @@ target_link_libraries(protobuf_example
 )
 ```
 
-####  ####
+
 
 主要是通过 find_package 获取相关的路径。
 
@@ -431,9 +437,9 @@ target_link_libraries(protobuf_example
 - `PROTOBUF_INCLUDE_DIRS` - The protobuf header files
 - `PROTOBUF_LIBRARIES` - The protobuf library
 
-#### 2.6.3 thrift 生成 ####
+#### 2.6.3 Thrift 生成 ####
 
-
+Thrift 跟Protobuf一样，具体示例如下
 
 ```cmake
 add_custom_command(
@@ -467,10 +473,6 @@ target_include_directories(HelloWorldClientThrift PRIVATE
 
 
 
-引用是
-
-
-
 ### 2.7 常用函数 ###
 
 #### 2.7.1 get_filename_component ####
@@ -479,7 +481,7 @@ target_include_directories(HelloWorldClientThrift PRIVATE
 get_filename_component(target_name "${CMAKE_CURRENT_SOURCE_DIR}" NAME)
 ```
 
-赋值到target_name 的变量名中了。
+赋值到target_name 的变量名中
 
 
 
@@ -537,10 +539,6 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr/local ..
 | RUNTIME        | 可执行二进制文件        | ${CMAKE_INSTALL_BINDIR}     | bin            |
 | PUBLIC_HEADER  | 与库关联的PUBLIC头文件  | ${CMAKE_INSTALL_INCLUDEDIR} | include        |
 | PRIVATE_HEADER | 与库关联的PRIVATE头文件 | ${CMAKE_INSTALL_INCLUDEDIR} | include        |
-
-###  ###
-
-
 
 
 

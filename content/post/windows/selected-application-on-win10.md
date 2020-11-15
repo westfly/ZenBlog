@@ -53,7 +53,7 @@ Windows作为应用最为广泛的操作系统之一，经过多年的发展，�
 
 [TurboLaunch](http://www.savardsoftware.com/turbolaunch/) 这个从WinXP时代就伴随左右的软件，这些年虽然没有更新，但在新时代依然有很强的生命力。建议启用安装包安装，因为它可以管理其它的Portable软件。
 
-默认情况下，只有3个Tab，可以在选项中设置。提供批量导出配置备份为Reg的功能。
+默认情况下，只有3个Tab，可以在选项中设置。提供批量导出配置备份为注册表的功能。
 
 ### Wox ###
 
@@ -77,6 +77,8 @@ Windows作为应用最为广泛的操作系统之一，经过多年的发展，�
 
 [[美化] RocketDock – 微软Windows打造仿苹果MacOS工具列(任务栏)软件下载/使用教程](https://www.xiaoyuanjiu.com/6241.html)
 
+
+
 ### Ditto ####
 
 Ditto 增强系统的剪切板，在[Windows 10 Build 17666版本更新中，微软正式为Windows 10引入了云剪切板功能](https://www.nruan.com/57814.html)通过Win+V快捷方式进行访问，支持100kb以内的纯文本、HTML以及小于1MB的图像，通过Win10内置的账号，可以达到两台Sharing的云剪切板效果。
@@ -95,9 +97,11 @@ Ditto 增强系统的剪切板，在[Windows 10 Build 17666版本更新中，微
 
 [WindowsTabs.设置任意windows程序的多标签页使用](https://zhuanlan.zhihu.com/p/64850605)
 
+这个软件可以将一些常用的用Groupy起来，然后添加到[**TurboLaunch**](http://www.savardsoftware.com/turbolaunch/)的开机自启动中。
+
 ### Quicker ###
 
-quicker 是定位于工具类的中台，功能比较强大，暂时还为深入研究使用。
+quicker 是定位于工具类的中台，功能比较强大，暂时还未深入研究使用。
 
 ### Sandboxie ###
 
@@ -147,7 +151,7 @@ F5R3D-XUPD6-4TD9B-2D2L4-354AX
 
 ### VSCode ###
 
-VSCode 是新一代的编程工具。
+VSCode 是新一代的编程工具，平台化的思路很对胃口。
 
 ### XShell ###
 
@@ -252,3 +256,11 @@ UMP版本最为吸引人的地方，在于暂时还有广告的入侵。
 ### 网易云音乐 ###
 
 UMP版本的已经好久没有更新了。
+
+
+
+## 八 总结 ##
+
+推荐了这么多软件，但我们的目的还是用软件满足自己平时的需求，而不是为了测试软件而软件。
+
+如果有什么好的软件，可以发出来，大家一起提高效率。

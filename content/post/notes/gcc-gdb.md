@@ -28,11 +28,11 @@ gcc -DDEBUG=ON macro.c
 gcc -UDEBUG macro.c
 ```
 
-### Address Sanitizer ###
+### 1.3 Address Sanitizer ###
 
 gcc从`4.8`版本起，集成了`Address Sanitizer`工具，可以用来检查内存访问的错误（编译时指定`-fsanitize=address”）
 
-### Thread Sanitizer ###
+### 1.4 Thread Sanitizer ###
 
 -fsanitize=thread -fPIE -pie
 
