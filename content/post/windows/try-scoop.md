@@ -170,9 +170,12 @@ scoop依赖于github，对网络有一定的要求，否则会比较慢，希望
 
 
 
-## 参考 资料 ##
+## 4. 参考资料 ##
 
 [「一行代码」搞定软件安装卸载，用 Scoop 管理你的 Windows 软件](https://sspai.com/post/52496)
+
 [Scoop包管理器的相关技巧和知识](https://www.thisfaner.com/p/scoop/)
+
 [给 Scoop 加上这些软件仓库，让它变成强大的 Windows 软件管理器](https://jszbug.com/13333)
+
 [搭建 Windows 统一开发环境（Chocolatey，Scoop）](https://zhuanlan.zhihu.com/p/128955118)

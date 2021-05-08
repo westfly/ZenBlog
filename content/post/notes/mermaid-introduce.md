@@ -2,10 +2,8 @@
 title: "利用 mermaid在Markdown中画图"
 date: 2020-11-02T21:35:02+08:00
 tags:
-    - vscode
-    - windows
+    - tools
 categories:
-    - windows
 comment: false
 draft: false
 ---
@@ -16,7 +14,11 @@ draft: false
 Generation of diagrams and flowcharts from text in a similar manner as markdown
 ```
 
+
+
 ##  基本用法 ##
+
+如下的语法，可以在Typora下直接显示图形
 
 ### 图形 ###
 
@@ -25,7 +27,7 @@ graph LR
 A--> B
 ```
 
-表示方向
+LR表示方向，其它实例如下
 
 | 缩写 | 含义     |
 | ---- | -------- |
